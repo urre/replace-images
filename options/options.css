@@ -1,0 +1,121 @@
+body {
+	padding: 2rem;
+	font-family: sans-serif;
+	height: calc(100vh - 4rem -42px);
+	font-size: 2rem;
+	border: 24px solid #34bf49;
+}
+
+label {
+	border: 2px solid #34bf49;
+	color: black;
+	border-radius: 8px;
+	padding: 1em 4rem;
+	margin: 1em;
+	cursor: pointer;
+	position: relative;
+	transition: background-color 200ms, border 200ms;
+}
+
+form {
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr 1fr;
+	/* grid-column-gap: 100px; */
+	grid-row-gap: 200px;
+	margin: 0 auto;
+}
+
+.form-group {
+	justify-self: center;
+}
+
+.intro {
+	display: block;
+	margin-top: 50px;
+	margin-bottom: 200px;
+	text-align: center;
+}
+
+header h1 {
+	margin-bottom: 1rem;
+}
+
+label:hover {
+	background: transparent;
+	border: 2px solid #238131;
+}
+
+.selection {
+	margin-top: 10vh;
+}
+
+.help {
+	text-align: center;
+	margin-top: 100px;
+}
+
+.help-icon {
+	border-radius: 50%;
+	width: 64px;
+	height: 64px;
+	display: inline-block;
+	vertical-align: middle;
+	margin-left: 2rem;
+	background-color: grey;
+	border: 2px solid #ccc;
+}
+
+.help svg {
+	display: inline-block;
+	vertical-align: middle;
+	width: 64px;
+	height: 64px;
+}
+
+input {
+	margin-right: 1em;
+}
+
+input[type='radio'] {
+	display: none;
+}
+
+input[type='radio']:checked + label {
+	background-color: #34bf49;
+	color: white;
+}
+
+label:before {
+	content: '';
+	position: absolute;
+	top: -80px;
+	left: calc(50% - 45px);
+	border-radius: 50%;
+	width: 90px;
+	height: 90px;
+	display: block;
+	background-repeat: no-repeat;
+	background-position: center center;
+	background-size: cover;
+	border: 4px solid #34bf49;
+}
+
+label[for='PATTERN']:before {
+	background-image: url(https://designshack.net/wp-content/uploads/svg-background.jpg);
+}
+
+label[for='MEME']:before {
+	background-image: url(https://assets.entrepreneur.com/content/3x2/2000/20180703190744-rollsafe-meme.jpeg?width=700&crop=2:1);
+}
+
+label[for='PLACEHOLDER']:before {
+	background-image: url(https://www.logistec.com/wp-content/uploads/2017/12/placeholder.png);
+}
+
+label[for='CAGE']:before {
+	background-image: url(https://cdn3.spiegel.de/images/image-33406-galleryV9-sdjn-33406.jpg);
+}
+
+label[for='CONSID']:before {
+	background-image: url(https://imengine.hall.infomaker.io/imengine/image.php?uuid=0026e3ba-5805-5c0e-b588-c94eb018423a&type=preview&source=false&function=hardcrop&width=980&height=653&q=80);
+}

@@ -1,0 +1,33 @@
+{
+  "name": "Replace images",
+  "version": "0.1.0",
+  "manifest_version" : 2,
+  "description": "Does some simple stuff",
+  "background": {
+    "scripts": ["background.js"],
+    "persistent": false
+  },
+  "content_scripts": [{
+    "matches": ["<all_urls>"],
+    "js": ["content.js"]
+  }],
+  "permissions": [
+    "background",
+    "unlimitedStorage",
+    "storage",
+    "tabs",
+    "activeTab",
+    "http://*/",
+    "https://*/",
+    "*://*/*",
+    "<all_urls>"
+  ],
+  "browser_action": {
+    "default_icon": "icon.png"
+  },
+   "browser_action": {
+    "default_title": "Set Cage images"
+  },
+  "permissions": ["storage", "activeTab"],
+	"options_page": "options/options.html"
+}
