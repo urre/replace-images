@@ -4,9 +4,6 @@
 
 ![](https://res.cloudinary.com/urre/image/upload/v1552665851/hupyvpqnylvcrnbttfpp.jpg)
 
-![](https://res.cloudinary.com/urre/image/upload/v1552665915/oesfli9ojrfr12rar5pn.jpg)
-
-![](https://res.cloudinary.com/urre/image/upload/v1552665813/lkssy9ypr1dwumfipr0x.jpg)
 
 Replace images in view port from different categories!
 
