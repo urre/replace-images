@@ -25,8 +25,15 @@
 + Navigate to the folder where you saved it
 
 ## Usage
-+ Click the extension browser button to replace images in your current tab. Click again to get new images
-+ Right Click the extension browser button and click Options to change category
+Click the extension browser button to replace images in your current tab. Click again to get new images
+
+![](https://res.cloudinary.com/urre/image/upload/v1552666248/jyg4zqmnagwksnv6guga.jpg)
+
+### Change category
+Right Click the extension browser button and click Options to change category
+![](https://res.cloudinary.com/urre/image/upload/v1552666225/ekyvbqdtdb8wqdrzcycw.jpg)
+
+<img src="https://res.cloudinary.com/urre/image/upload/v1552666299/b0ikjgskg6urkvlvaslk.jpg" />
 
 ### Changelog
 + 2019-03-15: 🎉 First version released
