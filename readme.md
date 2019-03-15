@@ -1,6 +1,12 @@
 # Replace Images Extension
 
-![](https://res.cloudinary.com/urre/image/upload/v1552665409/mec7hybnxregzyf8rivf.jpg)
+## Examples (using the Meme category)
+
+![](https://res.cloudinary.com/urre/image/upload/v1552665851/hupyvpqnylvcrnbttfpp.jpg)
+
+![](https://res.cloudinary.com/urre/image/upload/v1552665915/oesfli9ojrfr12rar5pn.jpg)
+
+![](https://res.cloudinary.com/urre/image/upload/v1552665813/lkssy9ypr1dwumfipr0x.jpg)
 
 Replace images in view port from different categories!
 
@@ -22,12 +28,11 @@ Current categories:
 + Navigate to the folder where you saved it
 
 ## Usage
-+ Open or create a new Trello card
-+ Right Click and click Options to change category
 + Click the extension browser button to replace images in your current tab. Click again to get new images
++ Right Click the extension browser button and click Options to change category
 
 ### Changelog
-+ 2017-03-15: 🎉 First version released
++ 2019-03-15: 🎉 First version released
 
 ### License
 
