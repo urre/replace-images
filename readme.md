@@ -5,9 +5,9 @@
 ![](https://res.cloudinary.com/urre/image/upload/v1552665851/hupyvpqnylvcrnbttfpp.jpg)
 
 
-Replace images in view port from different categories!
+### Replace images in view port from different categories!
 
-Current categories:
+#### Current categories:
 
 1. Meme
 2. Pattern
