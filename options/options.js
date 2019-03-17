@@ -1,4 +1,4 @@
-function setGender() {
+function setCategory() {
 	var genders = document.getElementsByName('kind')
 	var selectedGender
 
@@ -31,9 +31,9 @@ document.addEventListener('DOMContentLoaded', function() {
 
 	var radios = document.querySelectorAll('input')
 
-	for (radio of radios) {
+	for (radio of radios) {w
 		radio.addEventListener('change', function() {
-			setGender()
+			setCategory()
 		})
 	}
 })

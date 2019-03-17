@@ -10,7 +10,10 @@ MEME = [
 	'https://assets.entrepreneur.com/content/3x2/2000/20180703190744-rollsafe-meme.jpeg?width=700&crop=2:1',
 	'http://ichef.bbci.co.uk/news/976/cpsprodpb/17CF4/production/_98842579_distracted_boyfriend.jpg',
 	'https://res-3.cloudinary.com/revolttv/image/upload/w_800/c_crop,f_auto,fl_lossy.force_strip,q_auto:best,h_450,w_800,x_0,y_0/eda26h7gxnsjmxwhhwm5.jpg',
-	'https://i.kym-cdn.com/entries/icons/original/000/016/546/hidethepainharold.jpg'
+	'https://i.kym-cdn.com/entries/icons/original/000/016/546/hidethepainharold.jpg',
+	'https://imgflip.com/s/meme/Yo-Dawg-Heard-You.jpg',
+	'https://ewedit.files.wordpress.com/2018/03/dawson.jpg',
+	'https://i.kym-cdn.com/entries/icons/facebook/000/018/187/asdgagdsgg.jpg'
 ]
 
 PLACEHOLDER = [
@@ -21,12 +24,6 @@ PATTERN = [
 	'https://designshack.net/wp-content/uploads/svg-background.jpg'
 ]
 
-CONSID = [
-	'https://imengine.hall.infomaker.io/imengine/image.php?uuid=0026e3ba-5805-5c0e-b588-c94eb018423a&type=preview&source=false&function=hardcrop&width=980&height=653&q=80',
-	'https://imengine.lrf.infomaker.io/?uuid=47027ac4-74b6-467e-b201-e60b6b669398&type=preview&source=&function=fit&width=630&height=434&q=80&maxsize=630&name=consid2-jpg',
-	'https://marknadsforeningen.org/wp-content/uploads/2017/08/consid-forvarvar-imentum-2016-08-12-085752.jpg',
-	'http://ssk.lokalnytt.se/uploads/images/20227/2453_full.jpg'
-]
 
 if (typeof SELECTED === 'undefined') {
 	let SELECTED = null
@@ -49,9 +46,6 @@ if (typeof SELECTED === 'undefined') {
 				break;
 			case 'PLACEHOLDER':
 				SELECTED = PLACEHOLDER
-				break;
-			case 'CONSID':
-				SELECTED = CONSID
 				break;
 		}
 

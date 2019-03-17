@@ -1,18 +1,23 @@
-# Replace Images Extension
+# Replace Images
 
-## Examples (using the Meme category)
+## Replace images in view port from different categories!
 
-![](https://res.cloudinary.com/urre/image/upload/v1552665851/hupyvpqnylvcrnbttfpp.jpg)
-
-
-### Replace images in view port from different categories!
-
-#### Current categories:
+### Current categories:
 
 1. Meme
 2. Pattern
+3. Placeholder
 3. Cage
-4. Consid
+
+### Example using images from the Meme category
+
+![](https://res.cloudinary.com/urre/image/upload/v1552665851/hupyvpqnylvcrnbttfpp.jpg)
+
+### Can replace images in:
++ Image src atribute
++ Picture tag
++ Srcset attributes
++ Background images
 
 ---
 

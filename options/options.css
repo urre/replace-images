@@ -115,7 +115,3 @@ label[for='PLACEHOLDER']:before {
 label[for='CAGE']:before {
 	background-image: url(https://cdn3.spiegel.de/images/image-33406-galleryV9-sdjn-33406.jpg);
 }
-
-label[for='CONSID']:before {
-	background-image: url(https://imengine.hall.infomaker.io/imengine/image.php?uuid=0026e3ba-5805-5c0e-b588-c94eb018423a&type=preview&source=false&function=hardcrop&width=980&height=653&q=80);
-}
