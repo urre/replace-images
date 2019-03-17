@@ -11,13 +11,13 @@
 
 ### Example using images from the Meme category
 
-![](https://res.cloudinary.com/urre/image/upload/v1552665851/hupyvpqnylvcrnbttfpp.jpg)
+![](https://res.cloudinary.com/urre/image/upload/v1552854004/mgoofykrrl5hznbfqkzw.jpg)
 
-### Can replace images in:
-+ Image src atribute
-+ Picture tag
-+ Srcset attributes
-+ Background images
+### Works with:
++ Images with regular src atribute
++ Picture tags
++ srcset
++ Elements with background images
 
 ---
 

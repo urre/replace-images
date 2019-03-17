@@ -13,7 +13,7 @@ MEME = [
 	'https://i.kym-cdn.com/entries/icons/original/000/016/546/hidethepainharold.jpg',
 	'https://imgflip.com/s/meme/Yo-Dawg-Heard-You.jpg',
 	'https://ewedit.files.wordpress.com/2018/03/dawson.jpg',
-	'https://i.kym-cdn.com/entries/icons/facebook/000/018/187/asdgagdsgg.jpg'
+	'https://imgflip.com/s/meme/Evil-Toddler.jpg'
 ]
 
 PLACEHOLDER = [
