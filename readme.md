@@ -14,9 +14,8 @@
 ![](https://res.cloudinary.com/urre/image/upload/v1552854004/mgoofykrrl5hznbfqkzw.jpg)
 
 ### Works with:
-+ Images with regular src atribute
-+ Picture tags
-+ srcset
++ Images with regular src attribute
++ Responsive images using picture and srcset
 + Elements with background images
 
 ---
