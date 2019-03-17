@@ -1,10 +1,10 @@
 CAGE = [
-		'https://res.cloudinary.com/urre/image/upload/v1552595135/m5hovfcep9xonzxmmkmt.jpg',
-		'https://cdn3.spiegel.de/images/image-33406-galleryV9-sdjn-33406.jpg',
-		'https://www.haz.de/var/storage/images/haz/nachrichten/panorama/uebersicht/schauspieler-nicolas-cage-muss-angeblich-wegen-steuerschulden-zur-miete-wohnen/251391452-1-ger-DE/Nicolas-Cage-wohnt-zur-Miete_big_teaser_article.jpg',
-		'https://www.desktop-background.com/download/o/2011/12/14/312126_nicolas-cage-wallpapers_1920x1080_h.jpg',
-		'https://cdn.japantimes.2xx.jp/wp-content/uploads/2015/12/f-cage-a-20151224-870x579.jpg'
-	]
+	'https://res.cloudinary.com/urre/image/upload/v1552595135/m5hovfcep9xonzxmmkmt.jpg',
+	'https://cdn3.spiegel.de/images/image-33406-galleryV9-sdjn-33406.jpg',
+	'https://www.haz.de/var/storage/images/haz/nachrichten/panorama/uebersicht/schauspieler-nicolas-cage-muss-angeblich-wegen-steuerschulden-zur-miete-wohnen/251391452-1-ger-DE/Nicolas-Cage-wohnt-zur-Miete_big_teaser_article.jpg',
+	'https://www.desktop-background.com/download/o/2011/12/14/312126_nicolas-cage-wallpapers_1920x1080_h.jpg',
+	'https://cdn.japantimes.2xx.jp/wp-content/uploads/2015/12/f-cage-a-20151224-870x579.jpg'
+]
 
 MEME = [
 	'https://assets.entrepreneur.com/content/3x2/2000/20180703190744-rollsafe-meme.jpeg?width=700&crop=2:1',
@@ -20,10 +20,7 @@ PLACEHOLDER = [
 	'https://www.logistec.com/wp-content/uploads/2017/12/placeholder.png'
 ]
 
-PATTERN = [
-	'https://designshack.net/wp-content/uploads/svg-background.jpg'
-]
-
+PATTERN = ['https://designshack.net/wp-content/uploads/svg-background.jpg']
 
 if (typeof SELECTED === 'undefined') {
 	let SELECTED = null
@@ -31,37 +28,33 @@ if (typeof SELECTED === 'undefined') {
 	SELECTED = null
 }
 
-	chrome.storage.sync.get(['key'], function(result) {
-		console.log('Selected option is: ' + result.key)
+chrome.storage.sync.get(['key'], function(result) {
+	console.log('Selected option is: ' + result.key)
 
-		switch(result.key) {
-			case 'MEME':
-				SELECTED = MEME
-				break;
-			case 'CAGE':
-				SELECTED = CAGE
-				break;
-			case 'PATTERN':
-				SELECTED = PATTERN
-				break;
-			case 'PLACEHOLDER':
-				SELECTED = PLACEHOLDER
-				break;
-		}
+	switch (result.key) {
+		case 'MEME':
+			SELECTED = MEME
+			break
+		case 'CAGE':
+			SELECTED = CAGE
+			break
+		case 'PATTERN':
+			SELECTED = PATTERN
+			break
+		case 'PLACEHOLDER':
+			SELECTED = PLACEHOLDER
+			break
+	}
+})
 
-	})
+images = document.querySelectorAll('a, img, picture, div, figure')
 
-
-images = document.querySelectorAll('img, picture, div, figure')
-
-Array.prototype.randomElement = function () {
-    return this[Math.floor(Math.random() * this.length)]
+Array.prototype.randomElement = function() {
+	return this[Math.floor(Math.random() * this.length)]
 }
 
 setTimeout(() => {
-
-for (let img of images) {
-	if (img.tagName === 'IMG') {
+	for (let img of images) {
 		img.src = `${SELECTED.randomElement()}`
 		img.style.objectFit = 'cover'
 		img.style.objectPosition = '50%'
@@ -69,29 +62,30 @@ for (let img of images) {
 		if (img.getAttribute('srcset')) {
 			img.setAttribute('srcset', `${SELECTED.randomElement()}`)
 		}
-	}
 
-	if (img.tagName === 'PICTURE') {
-		if (img.querySelector('source')) {
-			const sources = img.querySelectorAll('source')
+		if (img.tagName === 'PICTURE') {
+			if (img.querySelector('source')) {
+				const sources = img.querySelectorAll('source')
 
-			for (source of sources) {
-				if (source.hasAttribute('srcset')) {
-					source.setAttribute('srcset', `${SELECTED.randomElement()}`)
+				for (source of sources) {
+					if (source.hasAttribute('srcset')) {
+						source.setAttribute('srcset', `${SELECTED.randomElement()}`)
+					}
 				}
 			}
 		}
-	}
 
-	if (
-		img.querySelector('img') &&
-		img.querySelector('img').getAttribute('srcset')
-	) {
-		img.querySelector('img').setAttribute('srcset', `${SELECTED.randomElement()}`)
-	}
-	if (img.style.backgroundImage) {
-		img.style.backgroundImage = `url(${SELECTED.randomElement()})`
-	}
-}
+		if (
+			img.querySelector('img') &&
+			img.querySelector('img').getAttribute('srcset')
+		) {
+			img
+				.querySelector('img')
+				.setAttribute('srcset', `${SELECTED.randomElement()}`)
+		}
 
+		if (img.style.backgroundImage) {
+			img.style.backgroundImage = `url(${SELECTED.randomElement()})`
+		}
+	}
 }, 600)

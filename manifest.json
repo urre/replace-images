@@ -23,11 +23,8 @@
     "<all_urls>"
   ],
   "browser_action": {
+    "default_title": "Replace Images",
     "default_icon": "icon.png"
   },
-   "browser_action": {
-    "default_title": "Replace Images"
-  },
-  "permissions": ["storage", "activeTab"],
 	"options_page": "options/options.html"
 }

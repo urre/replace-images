@@ -1,37 +1,28 @@
-function setCategory() {
-	var genders = document.getElementsByName('kind')
-	var selectedGender
+const setCategory = () => {
+	const categories = document.getElementsByName('kind')
+	var selected
 
-	for (var i = 0; i < genders.length; i++) {
-		if (genders[i].checked) selectedGender = genders[i].value
+	for(const category of categories) {
+		if(category.checked)
+			selected = category.value
 	}
 
-	chrome.storage.sync.set({ key: selectedGender }, function() {
-		console.log('Value is set to ' + selectedGender)
+	chrome.storage.sync.set({ key: selected }, function() {
+		console.log(selected)
 	})
 }
 
-function retrieveOptions() {
+document.addEventListener('DOMContentLoaded', () => {
 	chrome.storage.sync.get(['key'], function(result) {
-		console.log('Value currently is ' + result.key)
-		return result.key
-	})
-}
+		console.log(result)
 
-document.addEventListener('DOMContentLoaded', function() {
-
-	chrome.storage.sync.get(['key'], function(result) {
-		console.log('Value currently is ' + result.key)
-
-		radiobtn = document.getElementById(result.key)
+		let radiobtn = document.getElementById(result.key)
 		radiobtn.checked = true
-
 	})
-
 
 	var radios = document.querySelectorAll('input')
 
-	for (radio of radios) {w
+	for (radio of radios) {
 		radio.addEventListener('change', function() {
 			setCategory()
 		})
