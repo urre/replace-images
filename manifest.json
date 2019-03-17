@@ -1,8 +1,8 @@
 {
-  "name": "Replace images",
-  "version": "0.1.0",
+  "name": "Replace Images",
+  "version": "1.0.0",
   "manifest_version" : 2,
-  "description": "Replace Images - replace images in current tab. Choose from different categories.",
+  "description": "Chrome Extension for replacing images in your current tab, different categories available!",
   "background": {
     "scripts": ["background.js"],
     "persistent": false

@@ -1,6 +1,6 @@
 # Replace Images
 
-## Replace images in view port from different categories!
+## Chrome Extension for replacing images in your current tab, different categories available!
 
 ### Current categories:
 
