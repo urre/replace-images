@@ -38,7 +38,7 @@ Click the extension browser button to replace images in your current tab. Click 
 Right Click the extension browser button and click Options to change category
 ![](https://res.cloudinary.com/urre/image/upload/v1552666225/ekyvbqdtdb8wqdrzcycw.jpg)
 
-![](https://res.cloudinary.com/urre/image/upload/v1552666299/b0ikjgskg6urkvlvaslk.jpg)
+![](https://res.cloudinary.com/urre/image/upload/v1552840746/t2yclk1wgj5nxikz9qty.jpg)
 
 ### Changelog
 + 2019-03-15: 🎉 First version released
