@@ -1,6 +1,6 @@
 # Replace Images
 
-## Chrome Extension for replacing images in your current tab, different categories available!
+Chrome Extension for replacing images in your current tab, different categories available!
 
 ### Current categories:
 
@@ -14,8 +14,8 @@
 ![](https://res.cloudinary.com/urre/image/upload/v1552854004/mgoofykrrl5hznbfqkzw.jpg)
 
 ### Works with:
-+ Images with regular src attribute
-+ Responsive images using picture and srcset
++ Images with the regular `src` attribute
++ Responsive images using `picture` and `srcset`
 + Elements with background images
 
 ---
@@ -29,13 +29,16 @@
 + Navigate to the folder where you saved it
 
 ## Usage
-Click the extension browser button to replace images in your current tab. Click again to get new images
++ Click the extension browser button to replace images in your current tab.
++ Click again to get a new set of images
 
 ![](https://res.cloudinary.com/urre/image/upload/v1552666248/jyg4zqmnagwksnv6guga.jpg)
 
 ### Change category
 Right Click the extension browser button and click Options to change category
 ![](https://res.cloudinary.com/urre/image/upload/v1552666225/ekyvbqdtdb8wqdrzcycw.jpg)
+
+### Settings
 
 ![](https://res.cloudinary.com/urre/image/upload/v1552854211/ymvpiow1lmpi9w3xwvhb.jpg)
 
