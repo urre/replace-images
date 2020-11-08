@@ -1,6 +1,6 @@
 CAGE = [
 	'https://res.cloudinary.com/urre/image/upload/v1552595135/m5hovfcep9xonzxmmkmt.jpg',
-	'https://cdn3.spiegel.de/images/image-33406-galleryV9-sdjn-33406.jpg',
+	'https://www.hellomagazine.com/imagenes/profiles/nicolas-cage/6107-nicolas-cage.jpg',
 	'https://www.haz.de/var/storage/images/haz/nachrichten/panorama/uebersicht/schauspieler-nicolas-cage-muss-angeblich-wegen-steuerschulden-zur-miete-wohnen/251391452-1-ger-DE/Nicolas-Cage-wohnt-zur-Miete_big_teaser_article.jpg',
 	'https://www.desktop-background.com/download/o/2011/12/14/312126_nicolas-cage-wallpapers_1920x1080_h.jpg',
 	'https://cdn.japantimes.2xx.jp/wp-content/uploads/2015/12/f-cage-a-20151224-870x579.jpg'
