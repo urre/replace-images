@@ -16,17 +16,14 @@ MEME = [
 	'https://imgflip.com/s/meme/Evil-Toddler.jpg'
 ]
 
-PLACEHOLDER = [
+var PLACEHOLDER = [
 	'https://www.logistec.com/wp-content/uploads/2017/12/placeholder.png'
 ]
 
 PATTERN = ['https://designshack.net/wp-content/uploads/svg-background.jpg']
 
-if (typeof SELECTED === 'undefined') {
-	let SELECTED = null
-} else {
-	SELECTED = null
-}
+var SELECTED = ''
+
 
 chrome.storage.sync.get(['key'], function(result) {
 	console.log('Selected option is: ' + result.key)
@@ -47,7 +44,7 @@ chrome.storage.sync.get(['key'], function(result) {
 	}
 })
 
-images = document.querySelectorAll('a, img, picture, div, figure')
+var images = document.querySelectorAll('a, img, picture, div, figure')
 
 Array.prototype.randomElement = function() {
 	return this[Math.floor(Math.random() * this.length)]
@@ -88,4 +85,4 @@ setTimeout(() => {
 			img.style.backgroundImage = `url(${SELECTED.randomElement()})`
 		}
 	}
-}, 600)
+}, 100)

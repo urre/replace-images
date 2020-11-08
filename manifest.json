@@ -1,12 +1,23 @@
 {
   "name": "Replace Images",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "manifest_version" : 2,
   "description": "Chrome Extension for replacing images in your current tab, different categories available!",
-  "background": {
-    "scripts": ["background.js"],
-    "persistent": false
+  "options_ui": {
+    "page": "options/options.html",
+    "open_in_tab": true
   },
+  	"content_scripts": [
+		{
+			"matches": [
+				"<all_urls>"
+			],
+			"js": [
+				"replace.js"
+			],
+			"run_at": "document_idle"
+		}
+	],
   "permissions": [
     "background",
     "unlimitedStorage",
@@ -21,6 +32,5 @@
   "browser_action": {
     "default_title": "Replace Images",
     "default_icon": "icon.png"
-  },
-	"options_page": "options/options.html"
+  }
 }
