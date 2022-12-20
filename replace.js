@@ -1,26 +1,26 @@
-CAGE = [
+const CAGE = [
 	'https://res.cloudinary.com/urre/image/upload/v1552595135/m5hovfcep9xonzxmmkmt.jpg',
-	'https://www.hellomagazine.com/imagenes/profiles/nicolas-cage/6107-nicolas-cage.jpg',
-	'https://www.haz.de/var/storage/images/haz/nachrichten/panorama/uebersicht/schauspieler-nicolas-cage-muss-angeblich-wegen-steuerschulden-zur-miete-wohnen/251391452-1-ger-DE/Nicolas-Cage-wohnt-zur-Miete_big_teaser_article.jpg',
-	'https://www.desktop-background.com/download/o/2011/12/14/312126_nicolas-cage-wallpapers_1920x1080_h.jpg',
-	'https://cdn.japantimes.2xx.jp/wp-content/uploads/2015/12/f-cage-a-20151224-870x579.jpg'
+	'https://www.gp.se/image/policy:1.38357377:1607605578/COMe9DyK3zbjThe5bueXoiULGFg-jpg.jpg?f=Wide&w=1024&$p$f$w=82834ac',
+	'https://www.hollywoodreporter.com/wp-content/uploads/2022/03/20211211_AH_THR_ActorsRoundtable_1230-copy-SPLASH-2022.jpg?w=2000&h=1126&crop=1',
+	'https://assets-prd.ignimgs.com/2022/07/19/nicolas-cage-in-con-air-1658251738731.jpg',
+	'https://pyxis.nymag.com/v1/imgs/bef/c87/6359a2a35db664d45ac31794d122d4c8a7-15-nic-cage.rsocial.w1200.jpg'
 ]
 
-MEME = [
+const MEME = [
 	'https://assets.entrepreneur.com/content/3x2/2000/20180703190744-rollsafe-meme.jpeg?width=700&crop=2:1',
 	'http://ichef.bbci.co.uk/news/976/cpsprodpb/17CF4/production/_98842579_distracted_boyfriend.jpg',
 	'https://res-3.cloudinary.com/revolttv/image/upload/w_800/c_crop,f_auto,fl_lossy.force_strip,q_auto:best,h_450,w_800,x_0,y_0/eda26h7gxnsjmxwhhwm5.jpg',
 	'https://i.kym-cdn.com/entries/icons/original/000/016/546/hidethepainharold.jpg',
-	'https://imgflip.com/s/meme/Yo-Dawg-Heard-You.jpg',
-	'https://ewedit.files.wordpress.com/2018/03/dawson.jpg',
+	'https://sayingimages.com/wp-content/uploads/Wtf-granma-meme.jpg.webp',
+	'https://i.kym-cdn.com/entries/icons/facebook/000/018/012/this_is_fine.jpg',
 	'https://imgflip.com/s/meme/Evil-Toddler.jpg'
 ]
 
-var PLACEHOLDER = [
+const PLACEHOLDER = [
 	'https://www.logistec.com/wp-content/uploads/2017/12/placeholder.png'
 ]
 
-PATTERN = ['https://designshack.net/wp-content/uploads/svg-background.jpg']
+const PATTERN = ['https://source.unsplash.com/featured/300x201']
 
 var SELECTED = ''
 
@@ -41,6 +41,8 @@ chrome.storage.sync.get(['key'], function(result) {
 		case 'PLACEHOLDER':
 			SELECTED = PLACEHOLDER
 			break
+		default:
+			SELECTED = 'none'
 	}
 })
 
@@ -51,6 +53,9 @@ Array.prototype.randomElement = function() {
 }
 
 setTimeout(() => {
+
+	if(SELECTED === 'none') return
+
 	for (let img of images) {
 		img.src = `${SELECTED.randomElement()}`
 		img.style.objectFit = 'cover'

@@ -11,7 +11,7 @@ Chrome Extension for replacing images in your current tab, different categories 
 
 ### Example using images from the Meme category
 
-![](https://res.cloudinary.com/urre/image/upload/v1552854004/mgoofykrrl5hznbfqkzw.jpg)
+![](https://res.cloudinary.com/urre/image/upload/v1671555399/q1uaqoc1xvcowzbjj5ip.webp)
 
 ### Works with:
 + Images with the regular `src` attribute
@@ -34,15 +34,14 @@ Chrome Extension for replacing images in your current tab, different categories 
 
 ![](https://res.cloudinary.com/urre/image/upload/v1552666248/jyg4zqmnagwksnv6guga.jpg)
 
-### Change category
-Right Click the extension browser button and click Options to change category
-![](https://res.cloudinary.com/urre/image/upload/v1552666225/ekyvbqdtdb8wqdrzcycw.jpg)
-
 ### Settings
 
-![](https://res.cloudinary.com/urre/image/upload/v1552854211/ymvpiow1lmpi9w3xwvhb.jpg)
+Right Click the extension browser button and click Options to change category
+
+![](https://res.cloudinary.com/urre/image/upload/v1671555431/ll0mq47f5vkoutzw0bbj.webp)
 
 ### Changelog
++ 2022-12-20: Added "None" to the options page
 + 2020-11-07: Fix options page. Replace when page is loaded
 + 2019-03-15: 🎉 First version released
 

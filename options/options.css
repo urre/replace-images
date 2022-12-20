@@ -19,9 +19,9 @@ label {
 
 form {
 	display: grid;
-	grid-template-columns: 1fr 1fr 1fr 1fr;
-	/* grid-column-gap: 100px; */
-	grid-row-gap: 200px;
+	grid-template-columns: repeat(3, minmax(0, 1fr));
+	grid-column-gap: 2rem;
+	grid-row-gap: 240px;
 	margin: 0 auto;
 }
 
@@ -88,11 +88,11 @@ input[type='radio']:checked + label {
 label:before {
 	content: '';
 	position: absolute;
-	top: -80px;
-	left: calc(50% - 45px);
+	top: -120px;
+	left: calc(50% - 60px);
 	border-radius: 50%;
-	width: 90px;
-	height: 90px;
+	width: 120px;
+	height: 120px;
 	display: block;
 	background-repeat: no-repeat;
 	background-position: center center;
@@ -114,4 +114,8 @@ label[for='PLACEHOLDER']:before {
 
 label[for='CAGE']:before {
 	background-image: url(https://www.hellomagazine.com/imagenes/profiles/nicolas-cage/6107-nicolas-cage.jpg);
+}
+
+label[for='NONE']:before {
+	background-image: url(https://placehold.co/200x200?text=None);
 }
